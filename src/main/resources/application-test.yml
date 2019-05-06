@@ -1,0 +1,46 @@
+server.port: 19000
+server.tomcat.uri-encoding: UTF-8
+
+spring.jmx.default-domain: wechat_official
+
+# H2 jpa配置
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.open-in-view: true
+
+# H2数据库配置
+spring.datasource.username: "sa"
+spring.datasource.password: ""
+spring.datasource.url: "jdbc:h2:~/official;MODE=MYSQL"
+spring.datasource.driverClassName: "org.h2.Driver"
+spring.datasource.sql-script-encoding: utf-8
+
+# hibernate配置
+spring.jpa.properties.hibernate.show_sql: true
+spring.jpa.properties.hibernate.use_sql_comments: true
+spring.jpa.properties.hibernate.format_sql: true
+spring.jpa.properties.hibernate.type: trace
+spring.jpa.properties.hibernate.SQL: trace
+
+# 数据库连接池配置
+spring.datasource.type: com.zaxxer.hikari.HikariDataSource
+spring.datasource.hikari.minimum-idle: 2
+spring.datasource.hikari.maximum-pool-size: 10
+spring.datasource.hikari.auto-commit: true
+spring.datasource.hikari.idle-timeout: 30000
+spring.datasource.hikari.pool-name: WxPublicHikariCP
+spring.datasource.hikari.max-lifetime: 1800000
+spring.datasource.hikari.connection-timeout: 30000
+spring.datasource.hikari.connection-test-query: SELECT 1
+
+# redis配置
+spring.redis.host: 127.0.0.1 #服务器地址
+spring.redis.port: 6379 #redis连接端口
+spring.redis.database: 1 #redis数据库索引
+spring.redis.timeout: 10000 #连接超时时间，单位：毫秒
+spring.redis.pool.max-active: 8 #连接池最大数据，负数表示没有限制
+spring.redis.pool.max-wait: -1  #连接池最大阻塞等待时间
+spring.redis.pool.max-idle: 8   #连接池最大空闲连接
+spring.redis.pool.min-idle: 0   #连接池最小空闲连接
+
+debug: true

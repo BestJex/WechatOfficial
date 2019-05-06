@@ -1,0 +1,80 @@
+*{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+body {padding: 0px;margin: 0px;font-size: 14px;font-family: Microsoft Yahei,PingFang SC,HanHei SC,Arial;}
+ul {list-style:none;}
+input,button,select,textarea{outline:none}
+
+.clearfix:after {display: block;content: "";clear: both;}
+.bg {background-image: url("../image/bg.jpg");background-position: top;background-attachment:fixed;background-size: cover;
+    position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;z-index: -1;}
+.wrapper {color: white;min-width: 360px;}
+
+.title {padding-top: 4em;}
+.title p{color: #dd383c;font-size: 1.6em;margin: 0px;text-align: center;}
+
+.rule {padding-left: 1em;padding-right: 1em;text-align: center;max-width:340px;margin: auto;padding-top: 1em;padding-bottom: 1em;}
+.rule li {background: url("../image/point.png") no-repeat;background-origin: content-box;background-size: 10px, 10px;background-position-y: 4px;}
+.rule li p{line-height: 1.5em;text-align: left;margin-left: 1.1em;margin-top: 0.2em;margin-bottom: 0.2em;}
+
+.gift {text-align: center;}
+.gift img {width:22em;}
+
+.avatar {width:22em;margin: auto;text-align:center;}
+.avatar ul {padding: 0px;display:inline-block;}
+.avatar li {float: left;margin-left: 8px;/*margin-right: 8px;*/border-radius: 33px;border:2px solid #ffffff;overflow: hidden;width:50px;height: 50px;}
+.avatar li img {width: 50px;height: 50px;}
+
+.btnPanel {text-align: center;}
+.btnPanel .number{margin-top: 0.5em;margin-bottom: 0.5em;font-size: 20px;font-weight: bold;}
+
+.btnJoin {background: url("../image/btn1.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em;margin-bottom: 2em;}
+.btnShare {background: url("../image/btn2.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em;margin-bottom: 2em;}
+.btnHelp {background: url("../image/btn3.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em;margin-bottom: 2em;}
+.btnHelpSuccess {background: url("../image/btn4.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em;margin-bottom: 2em;}
+.btnSubscribe {background: url("../image/btn5.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em;margin-bottom: 2em;}
+.btnPay {background: url("../image/btn6.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em; margin-bottom: 2em;}
+.btnHome {background: url("../image/btn7.png") no-repeat;background-size: 100%;border: 0px;width: 15em;height: 6em;margin-bottom: 2em;}
+
+.btnJoin:active, .btnShare:active, .btnHelp:active, .btnSubscribe:active, .btnPay:active, .btnHelpSuccess:active, .btnHome:active{
+    transform:scale(0.95,0.95);border: 0px;-webkit-transform:scale(0.95,0.95);
+}
+
+.heading {margin-top: 4em;max-width:340px;margin-left: auto;margin-right: auto;margin-bottom: 4em;}
+.heading .left {border-radius: 33px;border:2px solid #ffffff;overflow: hidden;width:64px;height: 64px;}
+.heading .left img {width:64px;height: 64px;}
+.heading .right {padding-left: 64px;}
+.heading .name {font-size: 1.2em;padding-left: 1em;padding-top: 1em;}
+.heading .info {font-size: 1.2em;margin-top: 0.6em;}
+.heading .info img {width: 0.9em;}
+
+.btnPanel .notice {color: #dd383c;}
+
+.helpSuccess {text-align: center;height: 440px;background-position-x: center;background-position-y: center;background-attachment:fixed;position:relative;margin-top: -5em;}
+.helpSuccess .bg1 {background: url("../image/success1.png") no-repeat;background-position:center center;height:440px;}
+.helpSuccess .bg2 {position: absolute;background: url("../image/success2.png") no-repeat;background-size: contain;background-position: center center;height: 440px;width: 360px;top:1em;left:50%;margin-left: -180px;}
+.helpSuccess .bg2 span{line-height: 14em;font-size: 2em;color:white;font-weight: bold;}
+
+.successmsg {text-align: center;font-size: 1.6em;font-weight: bold;margin-bottom: 2.5em;}
+.subscribe {margin-top: 12em;margin-bottom: 12em;}
+.subscribe img{height: 13em;}
+
+.addressPanel {border-radius: 8px;border:2px solid #ffffff;width:26em;height: 400px;margin-top: 5em;margin-left: auto;margin-right: auto;text-align: center;}
+.addressPanel .payTitle{font-size: 1.6em;margin-top: 1.6em;}
+.addressPanel .payMoney{font-size: 1.6em;color: #dd383c;margin-bottom: 1em;}
+
+.address .group {margin-top:1em;margin-bottom: 1.5em;}
+.address .group label {font-size: 1.2em;width:5em;text-align: right;float: left;line-height: 1.6em;}
+.address .group div {margin:0px;padding:0px;width:16em;float: left;margin-left:1em;}
+.address input {width:100%;font-size: 16px;background-color: transparent;border: 1px solid #ccc;border-radius: 4px;line-height:1.4em;padding-top:3px;padding-bottom:3px;padding-left:6px;padding-right: 6px;color:white;}
+.address .group::after,.address .group::before{
+    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+}
+
+
+.orderPanel {border-radius: 8px;border:2px solid #ffffff;width:24em;height: 18em;margin-top: 2em;margin-left: auto;margin-right: auto;}
+.orderPanel-head {text-align: center; margin-top:4em;}
+.orderPanel-head img {text-align: center;width:5em;}
+.orderPanel-head span {font-size: 1.7em;}
+.orderPanel-order {padding-top: 1.5em;}
+.orderPanel-item { margin-top:0.7em;}
+.orderPanel-item label {width:7em; float: left; text-align: right;font-size: 1.2em;}
+.orderPanel-item span {font-size: 1.2em;width:12em;line-height: 1.2em;max-height: 3.6em;position: relative;overflow: hidden; float: left;text-overflow: ellipsis;}
